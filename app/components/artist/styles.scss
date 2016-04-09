@@ -1,0 +1,165 @@
+$concrete: #F4F4F4;
+$container-max-width: 1360px;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  text-align: right;
+  width: 100%;
+  background-color: $concrete;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-bottom: 1px solid darken($concrete, 8%);
+
+  > * {
+    margin: 0 10px;
+  }
+}
+
+.discover-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.artist-profile {
+  width: $container-max-width;
+
+  section {
+    display: flex;
+    background-color: $concrete;
+    border: 1px solid darken($concrete, 8%);
+    padding: 15px;
+
+    > * {
+      flex: 0 0 auto;
+    }
+
+    .top-tracks, .other-info {
+      flex: 1 0 auto;
+      margin: 0px 20px;
+    }
+  }
+}
+
+.top-albums {
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .album {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 0 10px;
+    background-color: darken($concrete, 5%);
+    border: 1px solid darken($concrete, 9%);
+
+    span, img {
+      width: inherit;
+    }
+
+    span {
+      text-align: center;
+      padding: 0 5px;
+    }
+  }
+}
+
+
+.genres {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5px 0;
+  .genre {
+    background-color: darken($concrete, 8%);
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin: 0px 5px;
+  }
+}
+
+.other-info {
+  .actions {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    > * {
+      margin: 5px 0;
+    }
+  }
+}
+
+.no-pic {
+  height: 300px;
+  width: 300px;
+}
+
+.favorites {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+
+  section {
+    flex: 0 0 950px;
+    background-color: $concrete;
+    border: 1px solid darken($concrete, 8%);
+    padding: 15px;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  li {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    background-color: darken($concrete, 5%);
+    border: 1px solid darken($concrete, 9%);;
+    margin: 10px;
+
+    img {
+      max-height: 230px;
+      max-width: 248px;
+    }
+    span, img {
+      width: inherit;
+    }
+    span {
+      font-weight: bold;
+      text-align: center;
+      padding: 0 5px;
+    }
+  }
+}
